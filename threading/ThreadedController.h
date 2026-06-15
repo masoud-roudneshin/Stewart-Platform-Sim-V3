@@ -15,7 +15,11 @@ class ThreadedController
 {
 	std::mutex targets_mtx_;
 	std::array<PDController, 6>				pd_controller_;
+<<<<<<< HEAD
 	std::array<real_t, 6>					target_strokes_{};
+=======
+	Vec6									target_strokes_ = Vec6::Zero();
+>>>>>>> af8a86cf56cab7fd0dee41797364c627ff15043a
 	LoopTimer								timer_{ std::chrono::microseconds(1000) };
 	std::array<ActuatorSharedData*, 6>		shared_;
 	ThreadedSafetyMonitor&					safety_;
@@ -41,7 +45,11 @@ public:
 
 	void start();
 	void stop();
+<<<<<<< HEAD
 	void set_target(const std::array<real_t,6>& target_strokes);
+=======
+	void set_target(const Vec6& target_strokes);
+>>>>>>> af8a86cf56cab7fd0dee41797364c627ff15043a
 
 private:
 	void run();
