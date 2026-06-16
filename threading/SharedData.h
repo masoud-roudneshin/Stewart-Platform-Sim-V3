@@ -6,6 +6,8 @@
 #include "../math/Math.h"
 
 
+enum class ControlMode { JOINT_SPACE, TASK_SPACE };
+
 enum class PlatformState { READY, RUNNING, ESTOP, FAULT };
 
 struct FOCState

@@ -46,6 +46,8 @@ public:
     // Physics update — call once per control timestep
     real_t update(real_t F_load);
 
+    double force_control_update(double F_cmd, double F_load = 0.0);
+
     // Getters 
     real_t get_stroke()        const noexcept;
     real_t get_body_length()   const noexcept;

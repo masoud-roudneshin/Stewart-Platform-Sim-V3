@@ -30,7 +30,7 @@ public:
         real_t dt = 0.0001,
         MotorParameters motor = MotorParameters(),
         LeadScrewParameters screw = LeadScrewParameters(),
-        real_t V_supply = 48.0);
+        real_t V_supply = 200.0);
 
     StewartPlatform(const StewartPlatform&)                 = delete;
     StewartPlatform& operator=(const StewartPlatform&)      = delete;
@@ -40,6 +40,7 @@ public:
     void set_actuator_target(int index, real_t total_length);
     void set_pose(const Pose6DoF& pose_);
     void update(real_t dt_step);
+    void update_task_space(const Vec6& leg_forces, real_t dt);
 
     const ActuatorState& get_actuator(int index) const;
     ActuatorState& get_actuator_mutable(int index);

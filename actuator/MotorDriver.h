@@ -35,7 +35,7 @@ struct LeadScrewParameters
         : lead(0.005)
         , efficiency(0.90)
         , moving_mass(2.0)
-        , viscous_friction(50.0)
+        , viscous_friction(2.0)
     {}
 };
 

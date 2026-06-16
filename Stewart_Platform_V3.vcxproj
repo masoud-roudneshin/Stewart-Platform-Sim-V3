@@ -130,7 +130,8 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-   <ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="control\TaskSpaceController.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="actuator\MotorDriver.cpp" />
     <ClCompile Include="actuator\ActuatorState.cpp" />
@@ -142,9 +143,9 @@
     <ClCompile Include="threading\ThreadedController.cpp" />
     <ClCompile Include="threading\ThreadedSafetyMonitor.cpp" />
     <ClCompile Include="threading\Logger.cpp" />
-</ItemGroup>
-
-<ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="control\TaskSpaceController.h" />
     <ClInclude Include="math\Math.h" />
     <ClInclude Include="geometry\Geometry.h" />
     <ClInclude Include="geometry\Kinematics.h" />
@@ -160,7 +161,7 @@
     <ClInclude Include="threading\Logger.h" />
     <ClInclude Include="utils\LoopTimer.h" />
     <ClInclude Include="utils\RingBuffer.h" />
-</ItemGroup>
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

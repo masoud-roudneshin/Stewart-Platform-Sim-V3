@@ -1,9 +1,6 @@
 #include "../geometry/Kinematics.h"
-<<<<<<< HEAD
 #include <iostream>
-=======
 
->>>>>>> af8a86cf56cab7fd0dee41797364c627ff15043a
 void Kinematics::compute_InverseKinematics(
     const PlatformGeometry& geom, // input
     const Pose6DoF& pose,         // input
@@ -29,7 +26,6 @@ void Kinematics::compute_InverseKinematics(
 }
 
 ///
-<<<<<<< HEAD
 Pose6 Kinematics::pose_to_vec(const Pose6DoF& p)
 {
     Pose6 x;
@@ -44,8 +40,6 @@ Pose6DoF Kinematics::vec_to_pose(const Pose6& x)
 
 }
 
-=======
->>>>>>> af8a86cf56cab7fd0dee41797364c627ff15043a
 
 void Kinematics::compute_Jacobian(const Pose6DoF& pose,
     Mat3x6& actuators_unit_vector,
@@ -55,17 +49,12 @@ void Kinematics::compute_Jacobian(const Pose6DoF& pose,
 
     for (size_t i = 0; i < 6; i++)
     {
-<<<<<<< HEAD
         Vec3 temp = jointCoordinates_Platform_World.col(i).cross(actuators_unit_vector.col(i));
-=======
-        Vec3 temp = actuators_unit_vector.col(i).cross(jointCoordinates_Platform_World.col(i));
->>>>>>> af8a86cf56cab7fd0dee41797364c627ff15043a
             
         Jacobian.row(i).head<3>() = actuators_unit_vector.col(i).transpose();
         Jacobian.row(i).tail<3>() = temp.transpose();
 
     }
-<<<<<<< HEAD
 }
 
 bool Kinematics::compute_forward_kinematics(const PlatformGeometry& geom,
@@ -96,10 +85,6 @@ bool Kinematics::compute_forward_kinematics(const PlatformGeometry& geom,
                                     Jacobian);
         delta_L = leg_lengths_measured - leg_lengths_estimate_FK;
 
-        std::cout << "iter=" << i
-            << " residual=" << delta_L.norm()
-            << " z=" << pose_estimate.z
-            << " roll=" << pose_estimate.roll << "\n";
 
         if (delta_L.norm() < tolerance)
         {
@@ -116,6 +101,4 @@ bool Kinematics::compute_forward_kinematics(const PlatformGeometry& geom,
     }
 
     return false;
-=======
->>>>>>> af8a86cf56cab7fd0dee41797364c627ff15043a
 }

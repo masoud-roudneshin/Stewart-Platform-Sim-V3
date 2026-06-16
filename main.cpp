@@ -1,193 +1,138 @@
-<<<<<<< HEAD
-#include <Eigen/Dense>
+ï»¿#include <Eigen/Dense>
 #include <iostream>
 #include <iomanip>
 #include "math/Math.h"
 #include "geometry/Geometry.h"
 #include "geometry/Kinematics.h"
 #include "platform/StewartPlatform.h"
+#include "control/TaskSpaceController.h"
+#include "threading/SharedData.h" 
 
 int main()
 {
-    std::cout << "=== Stewart Platform V3 — IK Test ===\n\n";
+    ControlMode mode = ControlMode::TASK_SPACE;
+
+    std::cout << "=== Stewart Platform V3 â€” IK Test ===\n\n";
 
     // 1. Create Geometry
     PlatformGeometry geom(1.0, 0.5, 5.0 * PI / 180.0, 5.0 * PI / 180.0);
     real_t body_length = 0.8;
-=======
-// placeholder
-#include<array>
-#include <memory>
-#include <thread>
-#include <iostream>
-#include "geometry/Geometry.h"
-#include "threading/SharedData.h"
-#include "threading/ThreadedFOCDriver.h"
-#include "threading/ThreadedController.h"
-#include "threading/Logger.h"
-#include "actuator/MotorDriver.h"
-#include "geometry/Kinematics.h"
-#include "platform/StewartPlatform.h"
-#include "threading/ThreadedSafetyMonitor.h"
-#include "math/Math.h"
-
-int main()
-{
-
-    // Make Platform Geometry
-
-    PlatformGeometry geom(1.0, 0.5, 5.0 * PI / 180.0, 5.0 * PI / 180.0);
-    double body_length = 0.8;
-    MotorParameters motor;
     LeadScrewParameters screw;
-    real_t force_to_iq_gain = screw.lead / (2.0 * PI * motor.Kt * screw.efficiency);
+    MotorParameters motor;
 
-    // Make Actuators Shared Data between the threads (and also their pointers)
-
-    std::array<std::unique_ptr<ActuatorSharedData>, 6> shared_data;
-
-    for (size_t i = 0; i < 6; i++)
-    {
-        shared_data[i] = std::make_unique<ActuatorSharedData>();
-    }
-
-    std::array<ActuatorSharedData*, 6> shared_ptrs;
-
-    for (size_t i = 0; i < 6; i++)
-    {
-        shared_ptrs[i] = shared_data[i].get();
-    }
-
-    // Making the threaded objects
-
-    // Make FOC Threaded Driver
-    ThreadedSafetyMonitor safety(shared_ptrs, 2.0, 500.0, 0.6);
-
-    std::array<std::unique_ptr<ThreadedFOCDriver>, 6> foc_drivers;
-
-    for (size_t i = 0; i < 6; i++)
-    {
-        foc_drivers[i] = std::make_unique<ThreadedFOCDriver>(*shared_data[i], safety);
-    }
-
-    ThreadedController controller(shared_ptrs,
-        safety,
-        10.0,              // wn
-        0.707,             // zeta
-        0.001,             // dt   1kHz control loop
-        force_to_iq_gain); // computed above);
-    Logger logger(shared_ptrs, safety);
-
-    // IK and target Pose
-
-    Pose6DoF target_pos;
-    target_pos.z = 0.05;
-    target_pos.roll = 0.1;
-
->>>>>>> af8a86cf56cab7fd0dee41797364c627ff15043a
     // Create temporary platform just to get geometry info
-    StewartPlatform temp_platform(geom, body_length, 0.6, 500.0, 10.0, 0.707, 0.0001);
-    real_t mid_heave = temp_platform.get_mid_heave();
+    StewartPlatform platform(geom, body_length, 0.6, 500.0, 10.0, 0.707, 0.0001);
+    real_t mid_heave = platform.get_mid_heave();
 
-<<<<<<< HEAD
-    // 2. Create Test Pose
-    Pose6DoF true_pose;
-    true_pose.z = 0.2 + mid_heave;
-    true_pose.roll = 0.3;
+    // Desired pose
+    Pose6DoF desired;
+    desired.z = 0.05 + mid_heave;
+    desired.roll = 0.1;
 
-    Vec6 leg_lengths;
-    Mat3x6 actuators_unit_vector = Mat3x6::Zero();
-    Mat3x6 jointCoordinates_Platform_World = Mat3x6::Zero();
+    // Controller gains
+    Vec6 Kp_gains, Kd_gains;
+    Kp_gains << 1000, 1000, 1000, 500, 500, 500;
+    Kd_gains << 100, 100, 100, 50, 50, 50;
 
-    Kinematics::compute_InverseKinematics(
-        geom,
-        true_pose,
-        leg_lengths,
-        actuators_unit_vector,
-        jointCoordinates_Platform_World);
+    Kp_gains *= 5.0;
+    Kd_gains *= 3.0;
 
-    // 3. Run FK starting from neutral pose (deliberate wrong initial guess)
-    Pose6DoF estimated_pose;  // default zero — wrong initial guess
-    estimated_pose.z = mid_heave;  // only z hint
+    TaskSpaceController ts_controller(Kp_gains, Kd_gains);
 
+    // FK initial guess
+    Pose6DoF actual_pose;
+    actual_pose.z = mid_heave;  // neutral
 
-    
+    // Previous pose for velocity estimation
+    Pose6 prev_pose_vec = Kinematics::pose_to_vec(actual_pose);
 
-    bool converged = Kinematics::compute_forward_kinematics(
-        geom, leg_lengths, estimated_pose);
-
-    // 4. Compare true pose vs estimated pose
-    std::cout << "Converged: " << converged << "\n";
-    std::cout << "True    z=" << true_pose.z << " roll=" << true_pose.roll << "\n";
-    std::cout << "Est     z=" << estimated_pose.z << " roll=" << estimated_pose.roll << "\n";
-    
-
-    /*
-
-    Kinematics::compute_InverseKinematics(geom, pose,
-        leg_lengths, unit_vectors, platform_joints_world);
-
-    std::cout << std::fixed << std::setprecision(4);
-    std::cout << "Leg lengths:\n";
-    for (int i = 0; i < 6; i++)
-        std::cout << "  L" << i << " = " << leg_lengths(i) << " m\n";
-    */
-=======
-    // Inverse Kinematics 
-
-    target_pos.z += mid_heave;   // offset by mid_heave
-
-    Vec6 leg_lengths;
-    Vec6 target_strokes = Vec6::Zero();
-    Mat3x6 unit_vectors;
-    Mat3x6 platform_joints_world;
-
-    Kinematics::compute_InverseKinematics(geom, target_pos,
-        leg_lengths, unit_vectors, platform_joints_world);
-
-    target_strokes = leg_lengths.array() - body_length;
-    
-
-    controller.set_target(target_strokes);
+    double dt = 0.001;
 
 
-    // Starting the threads
-    safety.start();
-    for (int i = 0; i < 6; i++) { foc_drivers[i]->start(); }
+    // For JointSpace Control
 
-    controller.start();
+    Vec6 target_leg_lengths;
+    Mat3x6 dummy1, dummy2;
+    Kinematics::compute_InverseKinematics(geom, desired,
+        target_leg_lengths, dummy1, dummy2);
 
-    logger.start();
+    Vec6 L_dot;
 
-    // Wait for the user's input
+    for (int step = 0; step <= 5000; step++)
+    {
+        // 1. Run IK on actual pose to get unit vectors and Jacobian
+        Vec6   leg_lengths;
+        Mat3x6 unit_vectors;
+        Mat3x6 platform_joints_world;
+        Kinematics::compute_InverseKinematics(geom, actual_pose,
+            leg_lengths, unit_vectors, platform_joints_world);
 
-    /*
-    std::cout << "Press Enter to stop...\n";
-    std::cin.get();
-    safety.estop();
-    */
+        Mat6 J;
+        Kinematics::compute_Jacobian(actual_pose,
+            unit_vectors, platform_joints_world, J);
 
-    // Wait 2 seconds then trigger ESTOP test
-    std::this_thread::sleep_for(std::chrono::seconds(2));
-    std::cout << "\nTriggering ESTOP...\n" << std::flush;
-    safety.estop();
-    std::this_thread::sleep_for(std::chrono::milliseconds(500)); // longer wait
-    std::cout << "\n\n=== ESTOP TRIGGERED ===\n" << std::flush;
-    std::cout << "State: " << static_cast<int>(safety.get_state()) << "\n" << std::flush;
-    std::cout << "Press Enter to exit...\n" << std::flush;
+        // 2. Estimate velocity from finite differences
+        Pose6 curr_pose_vec = Kinematics::pose_to_vec(actual_pose);
 
-    std::this_thread::sleep_for(std::chrono::seconds(3));
+        for (int i = 0; i < 6; i++)
+            L_dot(i) = platform.get_actuator(i).get_velocity();
 
-    std::cout << "Stopping logger...\n" << std::flush;
-    logger.stop();
-    std::cout << "Stopping controller...\n" << std::flush;
-    controller.stop();
-    std::cout << "Stopping FOC...\n" << std::flush;
-    for (int i = 0; i < 6; i++) foc_drivers[i]->stop();
-    std::cout << "Stopping safety...\n" << std::flush;
-    safety.stop();
-    std::cout << "All stopped.\n" << std::flush;
+        // Convert to task-space velocity
+        Vec6 actual_velocity = J.colPivHouseholderQr().solve(L_dot);
 
->>>>>>> af8a86cf56cab7fd0dee41797364c627ff15043a
+        // 3. Compute leg forces from task-space controller
+        Vec6 leg_forces = ts_controller.compute(actual_pose, desired,
+            actual_velocity, J);
+
+        // 4. Apply forces and update based on mode
+        if (mode == ControlMode::TASK_SPACE)
+        {
+            platform.update_task_space(leg_forces, dt);
+
+            // Get actual leg lengths from actuators for FK
+            Vec6 measured_lengths;
+            for (int i = 0; i < 6; i++)
+                measured_lengths(i) = platform.get_actuator(i).get_total_length();
+
+            // 5. Run FK to get actual pose
+            Kinematics::compute_forward_kinematics(geom, measured_lengths, actual_pose);
+        }
+        else  // JOINT_SPACE
+        {
+            // Set target strokes from IK
+            for (int i = 0; i < 6; i++)
+                platform.set_actuator_target(i, target_leg_lengths(i));
+            platform.update(dt);
+
+            // Get actual leg lengths for FK
+            Vec6 measured_lengths;
+            for (int i = 0; i < 6; i++)
+                measured_lengths(i) = platform.get_actuator(i).get_total_length();
+
+            Kinematics::compute_forward_kinematics(geom, measured_lengths, actual_pose);
+        }
+
+        // 7. Print every 100 steps
+        if (step % 500 == 0)
+        {
+            std::cout << "t=" << step * dt * 1000 << "ms"
+                << "  actual z = " << std::fixed << std::setprecision(4) << actual_pose.z
+                << "  actual roll = " << actual_pose.roll
+                << "  (target z = " << desired.z << " target roll = " << desired.roll << ")\n";
+
+            std::cout << "leg_forces: " << leg_forces.transpose() << "\n";
+            std::cout << "actual forces: ";
+            for (int i = 0; i < 6; i++)
+                std::cout << platform.get_actuator(i).get_force() << " ";
+            std::cout << "\n";
+            std::cout << "actual strokes: ";
+            for (int i = 0; i < 6; i++)
+                std::cout << platform.get_actuator(i).get_stroke() << " ";
+            std::cout << "\n\n";
+        }
+    }
+
+
+
     return 0;
 }

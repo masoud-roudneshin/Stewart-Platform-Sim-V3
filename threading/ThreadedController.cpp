@@ -1,7 +1,5 @@
 ﻿#include "../threading/ThreadedController.h"
 
-
-
 ThreadedController::ThreadedController(
 	std::array<ActuatorSharedData*, 6> shared,
 	ThreadedSafetyMonitor&			safety,
@@ -37,11 +35,8 @@ void ThreadedController::stop()
 }
 
 
-<<<<<<< HEAD
-void ThreadedController::set_target(const std::array<real_t, 6>& target_strokes)
-=======
+
 void ThreadedController::set_target(const Vec6& target_strokes)
->>>>>>> af8a86cf56cab7fd0dee41797364c627ff15043a
 {
 	std::lock_guard<std::mutex> lock(targets_mtx_); // To prevent data racing when target is called from outside
 	target_strokes_ = target_strokes;
@@ -60,11 +55,9 @@ void ThreadedController::run()
 			if (!running_.load()) break;
 			continue;
 		}
-<<<<<<< HEAD
-		std::array<real_t, 6> current_targets;
-=======
+
 		Vec6 current_targets;
->>>>>>> af8a86cf56cab7fd0dee41797364c627ff15043a
+
 		{
 			std::lock_guard<std::mutex> lock(targets_mtx_);
 			current_targets = target_strokes_;
@@ -79,11 +72,9 @@ void ThreadedController::run()
 				stroke_i = shared_[i]->latest_state.stroke;
 				velocity_i = shared_[i]->latest_state.velocity;
 			}
-<<<<<<< HEAD
+
 			real_t F_i = pd_controller_[i].compute(current_targets[i], stroke_i, velocity_i);
-=======
-			real_t F_i = pd_controller_[i].compute(current_targets(i), stroke_i, velocity_i);
->>>>>>> af8a86cf56cab7fd0dee41797364c627ff15043a
+
 			real_t iq_ref_i = F_i * force_to_iq_gain_;
 			shared_[i]->iq_ref.store(iq_ref_i, std::memory_order_release);
 		}

@@ -100,6 +100,11 @@ void StewartPlatform::update(real_t dt_step)
         actuators[i]->update(0.0);   // /in this version we assume F_load = 0 for now
 }
 
+void StewartPlatform::update_task_space(const Vec6& leg_forces, double dt)
+{
+    for (int i = 0; i < 6; i++)
+        actuators[i]->force_control_update(leg_forces(i));
+}
 // All Getters
 
 const ActuatorState& StewartPlatform::get_actuator(int index) const

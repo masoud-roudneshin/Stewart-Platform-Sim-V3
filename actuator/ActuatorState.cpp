@@ -57,6 +57,12 @@ real_t ActuatorState::update(real_t F_load)
 
 }
 
+real_t ActuatorState::force_control_update(double F_cmd, double F_load)
+{
+    apply_force(F_cmd);              // set iq_ref from force
+    return driver.update(iq_ref, F_load);  // bypass PD
+}
+
 // Getters
 real_t ActuatorState::get_stroke()        const noexcept { return driver.get_stroke(); }
 real_t ActuatorState::get_body_length()   const noexcept { return body_length; }
