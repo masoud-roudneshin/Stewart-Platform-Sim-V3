@@ -1,0 +1,759 @@
+Start testing: Jun 22 15:49 Eastern Daylight Time
+----------------------------------------------------------
+1/28 Testing: KinematicsTest.PureHeaveGivesEqualLegLengths
+1/28 Test: KinematicsTest.PureHeaveGivesEqualLegLengths
+Command: "C:/Users/Masoud/Desktop/test project/Projects/Stewart-Platform-V3/build_tests/Debug/stewart_tests.exe" "--gtest_filter=KinematicsTest.PureHeaveGivesEqualLegLengths" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/Masoud/Desktop/test project/Projects/Stewart-Platform-V3/build_tests
+"KinematicsTest.PureHeaveGivesEqualLegLengths" start time: Jun 22 15:49 Eastern Daylight Time
+Output:
+----------------------------------------------------------
+Running main() from C:\Users\Masoud\Desktop\test project\Projects\Stewart-Platform-V3\build_tests\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = KinematicsTest.PureHeaveGivesEqualLegLengths
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from KinematicsTest
+[ RUN      ] KinematicsTest.PureHeaveGivesEqualLegLengths
+[       OK ] KinematicsTest.PureHeaveGivesEqualLegLengths (0 ms)
+[----------] 1 test from KinematicsTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"KinematicsTest.PureHeaveGivesEqualLegLengths" end time: Jun 22 15:49 Eastern Daylight Time
+"KinematicsTest.PureHeaveGivesEqualLegLengths" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/28 Testing: KinematicsTest.UnitVectorsHaveUnitLength
+2/28 Test: KinematicsTest.UnitVectorsHaveUnitLength
+Command: "C:/Users/Masoud/Desktop/test project/Projects/Stewart-Platform-V3/build_tests/Debug/stewart_tests.exe" "--gtest_filter=KinematicsTest.UnitVectorsHaveUnitLength" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/Masoud/Desktop/test project/Projects/Stewart-Platform-V3/build_tests
+"KinematicsTest.UnitVectorsHaveUnitLength" start time: Jun 22 15:49 Eastern Daylight Time
+Output:
+----------------------------------------------------------
+Running main() from C:\Users\Masoud\Desktop\test project\Projects\Stewart-Platform-V3\build_tests\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = KinematicsTest.UnitVectorsHaveUnitLength
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from KinematicsTest
+[ RUN      ] KinematicsTest.UnitVectorsHaveUnitLength
+[       OK ] KinematicsTest.UnitVectorsHaveUnitLength (0 ms)
+[----------] 1 test from KinematicsTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"KinematicsTest.UnitVectorsHaveUnitLength" end time: Jun 22 15:49 Eastern Daylight Time
+"KinematicsTest.UnitVectorsHaveUnitLength" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/28 Testing: KinematicsTest.FKConvergesFromGoodInitialGuess
+3/28 Test: KinematicsTest.FKConvergesFromGoodInitialGuess
+Command: "C:/Users/Masoud/Desktop/test project/Projects/Stewart-Platform-V3/build_tests/Debug/stewart_tests.exe" "--gtest_filter=KinematicsTest.FKConvergesFromGoodInitialGuess" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/Masoud/Desktop/test project/Projects/Stewart-Platform-V3/build_tests
+"KinematicsTest.FKConvergesFromGoodInitialGuess" start time: Jun 22 15:49 Eastern Daylight Time
+Output:
+----------------------------------------------------------
+Running main() from C:\Users\Masoud\Desktop\test project\Projects\Stewart-Platform-V3\build_tests\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = KinematicsTest.FKConvergesFromGoodInitialGuess
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from KinematicsTest
+[ RUN      ] KinematicsTest.FKConvergesFromGoodInitialGuess
+[       OK ] KinematicsTest.FKConvergesFromGoodInitialGuess (0 ms)
+[----------] 1 test from KinematicsTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"KinematicsTest.FKConvergesFromGoodInitialGuess" end time: Jun 22 15:49 Eastern Daylight Time
+"KinematicsTest.FKConvergesFromGoodInitialGuess" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/28 Testing: KinematicsTest.FKRecoversTruePosition
+4/28 Test: KinematicsTest.FKRecoversTruePosition
+Command: "C:/Users/Masoud/Desktop/test project/Projects/Stewart-Platform-V3/build_tests/Debug/stewart_tests.exe" "--gtest_filter=KinematicsTest.FKRecoversTruePosition" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/Masoud/Desktop/test project/Projects/Stewart-Platform-V3/build_tests
+"KinematicsTest.FKRecoversTruePosition" start time: Jun 22 15:49 Eastern Daylight Time
+Output:
+----------------------------------------------------------
+Running main() from C:\Users\Masoud\Desktop\test project\Projects\Stewart-Platform-V3\build_tests\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = KinematicsTest.FKRecoversTruePosition
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from KinematicsTest
+[ RUN      ] KinematicsTest.FKRecoversTruePosition
+[       OK ] KinematicsTest.FKRecoversTruePosition (0 ms)
+[----------] 1 test from KinematicsTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"KinematicsTest.FKRecoversTruePosition" end time: Jun 22 15:49 Eastern Daylight Time
+"KinematicsTest.FKRecoversTruePosition" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/28 Testing: KinematicsTest.FKIKRoundTrip
+5/28 Test: KinematicsTest.FKIKRoundTrip
+Command: "C:/Users/Masoud/Desktop/test project/Projects/Stewart-Platform-V3/build_tests/Debug/stewart_tests.exe" "--gtest_filter=KinematicsTest.FKIKRoundTrip" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/Masoud/Desktop/test project/Projects/Stewart-Platform-V3/build_tests
+"KinematicsTest.FKIKRoundTrip" start time: Jun 22 15:49 Eastern Daylight Time
+Output:
+----------------------------------------------------------
+Running main() from C:\Users\Masoud\Desktop\test project\Projects\Stewart-Platform-V3\build_tests\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = KinematicsTest.FKIKRoundTrip
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from KinematicsTest
+[ RUN      ] KinematicsTest.FKIKRoundTrip
+[       OK ] KinematicsTest.FKIKRoundTrip (0 ms)
+[----------] 1 test from KinematicsTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"KinematicsTest.FKIKRoundTrip" end time: Jun 22 15:49 Eastern Daylight Time
+"KinematicsTest.FKIKRoundTrip" time elapsed: 00:00:00
+----------------------------------------------------------
+
+6/28 Testing: KinematicsTest.NeutralPoseGivesZeroRoll
+6/28 Test: KinematicsTest.NeutralPoseGivesZeroRoll
+Command: "C:/Users/Masoud/Desktop/test project/Projects/Stewart-Platform-V3/build_tests/Debug/stewart_tests.exe" "--gtest_filter=KinematicsTest.NeutralPoseGivesZeroRoll" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/Masoud/Desktop/test project/Projects/Stewart-Platform-V3/build_tests
+"KinematicsTest.NeutralPoseGivesZeroRoll" start time: Jun 22 15:49 Eastern Daylight Time
+Output:
+----------------------------------------------------------
+Running main() from C:\Users\Masoud\Desktop\test project\Projects\Stewart-Platform-V3\build_tests\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = KinematicsTest.NeutralPoseGivesZeroRoll
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from KinematicsTest
+[ RUN      ] KinematicsTest.NeutralPoseGivesZeroRoll
+[       OK ] KinematicsTest.NeutralPoseGivesZeroRoll (0 ms)
+[----------] 1 test from KinematicsTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"KinematicsTest.NeutralPoseGivesZeroRoll" end time: Jun 22 15:49 Eastern Daylight Time
+"KinematicsTest.NeutralPoseGivesZeroRoll" time elapsed: 00:00:00
+----------------------------------------------------------
+
+7/28 Testing: PDControllerTest.ZeroErrorGivesZeroForce
+7/28 Test: PDControllerTest.ZeroErrorGivesZeroForce
+Command: "C:/Users/Masoud/Desktop/test project/Projects/Stewart-Platform-V3/build_tests/Debug/stewart_tests.exe" "--gtest_filter=PDControllerTest.ZeroErrorGivesZeroForce" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/Masoud/Desktop/test project/Projects/Stewart-Platform-V3/build_tests
+"PDControllerTest.ZeroErrorGivesZeroForce" start time: Jun 22 15:49 Eastern Daylight Time
+Output:
+----------------------------------------------------------
+Running main() from C:\Users\Masoud\Desktop\test project\Projects\Stewart-Platform-V3\build_tests\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = PDControllerTest.ZeroErrorGivesZeroForce
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from PDControllerTest
+[ RUN      ] PDControllerTest.ZeroErrorGivesZeroForce
+[       OK ] PDControllerTest.ZeroErrorGivesZeroForce (0 ms)
+[----------] 1 test from PDControllerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"PDControllerTest.ZeroErrorGivesZeroForce" end time: Jun 22 15:49 Eastern Daylight Time
+"PDControllerTest.ZeroErrorGivesZeroForce" time elapsed: 00:00:00
+----------------------------------------------------------
+
+8/28 Testing: PDControllerTest.PositiveErrorGivesPositiveForce
+8/28 Test: PDControllerTest.PositiveErrorGivesPositiveForce
+Command: "C:/Users/Masoud/Desktop/test project/Projects/Stewart-Platform-V3/build_tests/Debug/stewart_tests.exe" "--gtest_filter=PDControllerTest.PositiveErrorGivesPositiveForce" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/Masoud/Desktop/test project/Projects/Stewart-Platform-V3/build_tests
+"PDControllerTest.PositiveErrorGivesPositiveForce" start time: Jun 22 15:49 Eastern Daylight Time
+Output:
+----------------------------------------------------------
+Running main() from C:\Users\Masoud\Desktop\test project\Projects\Stewart-Platform-V3\build_tests\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = PDControllerTest.PositiveErrorGivesPositiveForce
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from PDControllerTest
+[ RUN      ] PDControllerTest.PositiveErrorGivesPositiveForce
+[       OK ] PDControllerTest.PositiveErrorGivesPositiveForce (0 ms)
+[----------] 1 test from PDControllerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"PDControllerTest.PositiveErrorGivesPositiveForce" end time: Jun 22 15:49 Eastern Daylight Time
+"PDControllerTest.PositiveErrorGivesPositiveForce" time elapsed: 00:00:00
+----------------------------------------------------------
+
+9/28 Testing: PDControllerTest.NegativeErrorGivesNegativeForce
+9/28 Test: PDControllerTest.NegativeErrorGivesNegativeForce
+Command: "C:/Users/Masoud/Desktop/test project/Projects/Stewart-Platform-V3/build_tests/Debug/stewart_tests.exe" "--gtest_filter=PDControllerTest.NegativeErrorGivesNegativeForce" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/Masoud/Desktop/test project/Projects/Stewart-Platform-V3/build_tests
+"PDControllerTest.NegativeErrorGivesNegativeForce" start time: Jun 22 15:49 Eastern Daylight Time
+Output:
+----------------------------------------------------------
+Running main() from C:\Users\Masoud\Desktop\test project\Projects\Stewart-Platform-V3\build_tests\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = PDControllerTest.NegativeErrorGivesNegativeForce
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from PDControllerTest
+[ RUN      ] PDControllerTest.NegativeErrorGivesNegativeForce
+[       OK ] PDControllerTest.NegativeErrorGivesNegativeForce (0 ms)
+[----------] 1 test from PDControllerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"PDControllerTest.NegativeErrorGivesNegativeForce" end time: Jun 22 15:49 Eastern Daylight Time
+"PDControllerTest.NegativeErrorGivesNegativeForce" time elapsed: 00:00:00
+----------------------------------------------------------
+
+10/28 Testing: PDControllerTest.PositiveVelocityReducesForce
+10/28 Test: PDControllerTest.PositiveVelocityReducesForce
+Command: "C:/Users/Masoud/Desktop/test project/Projects/Stewart-Platform-V3/build_tests/Debug/stewart_tests.exe" "--gtest_filter=PDControllerTest.PositiveVelocityReducesForce" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/Masoud/Desktop/test project/Projects/Stewart-Platform-V3/build_tests
+"PDControllerTest.PositiveVelocityReducesForce" start time: Jun 22 15:49 Eastern Daylight Time
+Output:
+----------------------------------------------------------
+Running main() from C:\Users\Masoud\Desktop\test project\Projects\Stewart-Platform-V3\build_tests\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = PDControllerTest.PositiveVelocityReducesForce
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from PDControllerTest
+[ RUN      ] PDControllerTest.PositiveVelocityReducesForce
+[       OK ] PDControllerTest.PositiveVelocityReducesForce (0 ms)
+[----------] 1 test from PDControllerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"PDControllerTest.PositiveVelocityReducesForce" end time: Jun 22 15:49 Eastern Daylight Time
+"PDControllerTest.PositiveVelocityReducesForce" time elapsed: 00:00:00
+----------------------------------------------------------
+
+11/28 Testing: PDControllerTest.GravityFeedforwardAddsToForce
+11/28 Test: PDControllerTest.GravityFeedforwardAddsToForce
+Command: "C:/Users/Masoud/Desktop/test project/Projects/Stewart-Platform-V3/build_tests/Debug/stewart_tests.exe" "--gtest_filter=PDControllerTest.GravityFeedforwardAddsToForce" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/Masoud/Desktop/test project/Projects/Stewart-Platform-V3/build_tests
+"PDControllerTest.GravityFeedforwardAddsToForce" start time: Jun 22 15:49 Eastern Daylight Time
+Output:
+----------------------------------------------------------
+Running main() from C:\Users\Masoud\Desktop\test project\Projects\Stewart-Platform-V3\build_tests\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = PDControllerTest.GravityFeedforwardAddsToForce
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from PDControllerTest
+[ RUN      ] PDControllerTest.GravityFeedforwardAddsToForce
+[       OK ] PDControllerTest.GravityFeedforwardAddsToForce (0 ms)
+[----------] 1 test from PDControllerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"PDControllerTest.GravityFeedforwardAddsToForce" end time: Jun 22 15:49 Eastern Daylight Time
+"PDControllerTest.GravityFeedforwardAddsToForce" time elapsed: 00:00:00
+----------------------------------------------------------
+
+12/28 Testing: TaskSpaceControllerTest.ZeroErrorGivesZeroForces
+12/28 Test: TaskSpaceControllerTest.ZeroErrorGivesZeroForces
+Command: "C:/Users/Masoud/Desktop/test project/Projects/Stewart-Platform-V3/build_tests/Debug/stewart_tests.exe" "--gtest_filter=TaskSpaceControllerTest.ZeroErrorGivesZeroForces" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/Masoud/Desktop/test project/Projects/Stewart-Platform-V3/build_tests
+"TaskSpaceControllerTest.ZeroErrorGivesZeroForces" start time: Jun 22 15:49 Eastern Daylight Time
+Output:
+----------------------------------------------------------
+Running main() from C:\Users\Masoud\Desktop\test project\Projects\Stewart-Platform-V3\build_tests\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = TaskSpaceControllerTest.ZeroErrorGivesZeroForces
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TaskSpaceControllerTest
+[ RUN      ] TaskSpaceControllerTest.ZeroErrorGivesZeroForces
+[       OK ] TaskSpaceControllerTest.ZeroErrorGivesZeroForces (0 ms)
+[----------] 1 test from TaskSpaceControllerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"TaskSpaceControllerTest.ZeroErrorGivesZeroForces" end time: Jun 22 15:49 Eastern Daylight Time
+"TaskSpaceControllerTest.ZeroErrorGivesZeroForces" time elapsed: 00:00:00
+----------------------------------------------------------
+
+13/28 Testing: TaskSpaceControllerTest.PositiveZErrorGivesPositiveForces
+13/28 Test: TaskSpaceControllerTest.PositiveZErrorGivesPositiveForces
+Command: "C:/Users/Masoud/Desktop/test project/Projects/Stewart-Platform-V3/build_tests/Debug/stewart_tests.exe" "--gtest_filter=TaskSpaceControllerTest.PositiveZErrorGivesPositiveForces" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/Masoud/Desktop/test project/Projects/Stewart-Platform-V3/build_tests
+"TaskSpaceControllerTest.PositiveZErrorGivesPositiveForces" start time: Jun 22 15:49 Eastern Daylight Time
+Output:
+----------------------------------------------------------
+Running main() from C:\Users\Masoud\Desktop\test project\Projects\Stewart-Platform-V3\build_tests\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = TaskSpaceControllerTest.PositiveZErrorGivesPositiveForces
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TaskSpaceControllerTest
+[ RUN      ] TaskSpaceControllerTest.PositiveZErrorGivesPositiveForces
+[       OK ] TaskSpaceControllerTest.PositiveZErrorGivesPositiveForces (0 ms)
+[----------] 1 test from TaskSpaceControllerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"TaskSpaceControllerTest.PositiveZErrorGivesPositiveForces" end time: Jun 22 15:49 Eastern Daylight Time
+"TaskSpaceControllerTest.PositiveZErrorGivesPositiveForces" time elapsed: 00:00:00
+----------------------------------------------------------
+
+14/28 Testing: TaskSpaceControllerTest.ForcesSymmetricForPureHeave
+14/28 Test: TaskSpaceControllerTest.ForcesSymmetricForPureHeave
+Command: "C:/Users/Masoud/Desktop/test project/Projects/Stewart-Platform-V3/build_tests/Debug/stewart_tests.exe" "--gtest_filter=TaskSpaceControllerTest.ForcesSymmetricForPureHeave" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/Masoud/Desktop/test project/Projects/Stewart-Platform-V3/build_tests
+"TaskSpaceControllerTest.ForcesSymmetricForPureHeave" start time: Jun 22 15:49 Eastern Daylight Time
+Output:
+----------------------------------------------------------
+Running main() from C:\Users\Masoud\Desktop\test project\Projects\Stewart-Platform-V3\build_tests\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = TaskSpaceControllerTest.ForcesSymmetricForPureHeave
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TaskSpaceControllerTest
+[ RUN      ] TaskSpaceControllerTest.ForcesSymmetricForPureHeave
+[       OK ] TaskSpaceControllerTest.ForcesSymmetricForPureHeave (0 ms)
+[----------] 1 test from TaskSpaceControllerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"TaskSpaceControllerTest.ForcesSymmetricForPureHeave" end time: Jun 22 15:49 Eastern Daylight Time
+"TaskSpaceControllerTest.ForcesSymmetricForPureHeave" time elapsed: 00:00:00
+----------------------------------------------------------
+
+15/28 Testing: RingBufferTest.EmptyOnConstruction
+15/28 Test: RingBufferTest.EmptyOnConstruction
+Command: "C:/Users/Masoud/Desktop/test project/Projects/Stewart-Platform-V3/build_tests/Debug/stewart_tests.exe" "--gtest_filter=RingBufferTest.EmptyOnConstruction" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/Masoud/Desktop/test project/Projects/Stewart-Platform-V3/build_tests
+"RingBufferTest.EmptyOnConstruction" start time: Jun 22 15:49 Eastern Daylight Time
+Output:
+----------------------------------------------------------
+Running main() from C:\Users\Masoud\Desktop\test project\Projects\Stewart-Platform-V3\build_tests\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = RingBufferTest.EmptyOnConstruction
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from RingBufferTest
+[ RUN      ] RingBufferTest.EmptyOnConstruction
+[       OK ] RingBufferTest.EmptyOnConstruction (0 ms)
+[----------] 1 test from RingBufferTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"RingBufferTest.EmptyOnConstruction" end time: Jun 22 15:49 Eastern Daylight Time
+"RingBufferTest.EmptyOnConstruction" time elapsed: 00:00:00
+----------------------------------------------------------
+
+16/28 Testing: RingBufferTest.PushMakesNotEmpty
+16/28 Test: RingBufferTest.PushMakesNotEmpty
+Command: "C:/Users/Masoud/Desktop/test project/Projects/Stewart-Platform-V3/build_tests/Debug/stewart_tests.exe" "--gtest_filter=RingBufferTest.PushMakesNotEmpty" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/Masoud/Desktop/test project/Projects/Stewart-Platform-V3/build_tests
+"RingBufferTest.PushMakesNotEmpty" start time: Jun 22 15:49 Eastern Daylight Time
+Output:
+----------------------------------------------------------
+Running main() from C:\Users\Masoud\Desktop\test project\Projects\Stewart-Platform-V3\build_tests\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = RingBufferTest.PushMakesNotEmpty
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from RingBufferTest
+[ RUN      ] RingBufferTest.PushMakesNotEmpty
+[       OK ] RingBufferTest.PushMakesNotEmpty (0 ms)
+[----------] 1 test from RingBufferTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"RingBufferTest.PushMakesNotEmpty" end time: Jun 22 15:49 Eastern Daylight Time
+"RingBufferTest.PushMakesNotEmpty" time elapsed: 00:00:00
+----------------------------------------------------------
+
+17/28 Testing: RingBufferTest.PopReturnsPushedValue
+17/28 Test: RingBufferTest.PopReturnsPushedValue
+Command: "C:/Users/Masoud/Desktop/test project/Projects/Stewart-Platform-V3/build_tests/Debug/stewart_tests.exe" "--gtest_filter=RingBufferTest.PopReturnsPushedValue" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/Masoud/Desktop/test project/Projects/Stewart-Platform-V3/build_tests
+"RingBufferTest.PopReturnsPushedValue" start time: Jun 22 15:49 Eastern Daylight Time
+Output:
+----------------------------------------------------------
+Running main() from C:\Users\Masoud\Desktop\test project\Projects\Stewart-Platform-V3\build_tests\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = RingBufferTest.PopReturnsPushedValue
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from RingBufferTest
+[ RUN      ] RingBufferTest.PopReturnsPushedValue
+[       OK ] RingBufferTest.PopReturnsPushedValue (0 ms)
+[----------] 1 test from RingBufferTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"RingBufferTest.PopReturnsPushedValue" end time: Jun 22 15:49 Eastern Daylight Time
+"RingBufferTest.PopReturnsPushedValue" time elapsed: 00:00:00
+----------------------------------------------------------
+
+18/28 Testing: RingBufferTest.PopOnEmptyReturnsFalse
+18/28 Test: RingBufferTest.PopOnEmptyReturnsFalse
+Command: "C:/Users/Masoud/Desktop/test project/Projects/Stewart-Platform-V3/build_tests/Debug/stewart_tests.exe" "--gtest_filter=RingBufferTest.PopOnEmptyReturnsFalse" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/Masoud/Desktop/test project/Projects/Stewart-Platform-V3/build_tests
+"RingBufferTest.PopOnEmptyReturnsFalse" start time: Jun 22 15:49 Eastern Daylight Time
+Output:
+----------------------------------------------------------
+Running main() from C:\Users\Masoud\Desktop\test project\Projects\Stewart-Platform-V3\build_tests\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = RingBufferTest.PopOnEmptyReturnsFalse
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from RingBufferTest
+[ RUN      ] RingBufferTest.PopOnEmptyReturnsFalse
+[       OK ] RingBufferTest.PopOnEmptyReturnsFalse (0 ms)
+[----------] 1 test from RingBufferTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"RingBufferTest.PopOnEmptyReturnsFalse" end time: Jun 22 15:49 Eastern Daylight Time
+"RingBufferTest.PopOnEmptyReturnsFalse" time elapsed: 00:00:00
+----------------------------------------------------------
+
+19/28 Testing: RingBufferTest.FIFOOrder
+19/28 Test: RingBufferTest.FIFOOrder
+Command: "C:/Users/Masoud/Desktop/test project/Projects/Stewart-Platform-V3/build_tests/Debug/stewart_tests.exe" "--gtest_filter=RingBufferTest.FIFOOrder" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/Masoud/Desktop/test project/Projects/Stewart-Platform-V3/build_tests
+"RingBufferTest.FIFOOrder" start time: Jun 22 15:49 Eastern Daylight Time
+Output:
+----------------------------------------------------------
+Running main() from C:\Users\Masoud\Desktop\test project\Projects\Stewart-Platform-V3\build_tests\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = RingBufferTest.FIFOOrder
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from RingBufferTest
+[ RUN      ] RingBufferTest.FIFOOrder
+[       OK ] RingBufferTest.FIFOOrder (0 ms)
+[----------] 1 test from RingBufferTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"RingBufferTest.FIFOOrder" end time: Jun 22 15:49 Eastern Daylight Time
+"RingBufferTest.FIFOOrder" time elapsed: 00:00:00
+----------------------------------------------------------
+
+20/28 Testing: RingBufferTest.PushReturnsFalseWhenFull
+20/28 Test: RingBufferTest.PushReturnsFalseWhenFull
+Command: "C:/Users/Masoud/Desktop/test project/Projects/Stewart-Platform-V3/build_tests/Debug/stewart_tests.exe" "--gtest_filter=RingBufferTest.PushReturnsFalseWhenFull" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/Masoud/Desktop/test project/Projects/Stewart-Platform-V3/build_tests
+"RingBufferTest.PushReturnsFalseWhenFull" start time: Jun 22 15:49 Eastern Daylight Time
+Output:
+----------------------------------------------------------
+Running main() from C:\Users\Masoud\Desktop\test project\Projects\Stewart-Platform-V3\build_tests\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = RingBufferTest.PushReturnsFalseWhenFull
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from RingBufferTest
+[ RUN      ] RingBufferTest.PushReturnsFalseWhenFull
+[       OK ] RingBufferTest.PushReturnsFalseWhenFull (0 ms)
+[----------] 1 test from RingBufferTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"RingBufferTest.PushReturnsFalseWhenFull" end time: Jun 22 15:49 Eastern Daylight Time
+"RingBufferTest.PushReturnsFalseWhenFull" time elapsed: 00:00:00
+----------------------------------------------------------
+
+21/28 Testing: RingBufferTest.PushOverwriteAlwaysSucceeds
+21/28 Test: RingBufferTest.PushOverwriteAlwaysSucceeds
+Command: "C:/Users/Masoud/Desktop/test project/Projects/Stewart-Platform-V3/build_tests/Debug/stewart_tests.exe" "--gtest_filter=RingBufferTest.PushOverwriteAlwaysSucceeds" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/Masoud/Desktop/test project/Projects/Stewart-Platform-V3/build_tests
+"RingBufferTest.PushOverwriteAlwaysSucceeds" start time: Jun 22 15:49 Eastern Daylight Time
+Output:
+----------------------------------------------------------
+Running main() from C:\Users\Masoud\Desktop\test project\Projects\Stewart-Platform-V3\build_tests\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = RingBufferTest.PushOverwriteAlwaysSucceeds
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from RingBufferTest
+[ RUN      ] RingBufferTest.PushOverwriteAlwaysSucceeds
+[       OK ] RingBufferTest.PushOverwriteAlwaysSucceeds (0 ms)
+[----------] 1 test from RingBufferTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"RingBufferTest.PushOverwriteAlwaysSucceeds" end time: Jun 22 15:49 Eastern Daylight Time
+"RingBufferTest.PushOverwriteAlwaysSucceeds" time elapsed: 00:00:00
+----------------------------------------------------------
+
+22/28 Testing: RingBufferTest.PushOverwriteKeepsLatestValues
+22/28 Test: RingBufferTest.PushOverwriteKeepsLatestValues
+Command: "C:/Users/Masoud/Desktop/test project/Projects/Stewart-Platform-V3/build_tests/Debug/stewart_tests.exe" "--gtest_filter=RingBufferTest.PushOverwriteKeepsLatestValues" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/Masoud/Desktop/test project/Projects/Stewart-Platform-V3/build_tests
+"RingBufferTest.PushOverwriteKeepsLatestValues" start time: Jun 22 15:49 Eastern Daylight Time
+Output:
+----------------------------------------------------------
+Running main() from C:\Users\Masoud\Desktop\test project\Projects\Stewart-Platform-V3\build_tests\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = RingBufferTest.PushOverwriteKeepsLatestValues
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from RingBufferTest
+[ RUN      ] RingBufferTest.PushOverwriteKeepsLatestValues
+[       OK ] RingBufferTest.PushOverwriteKeepsLatestValues (0 ms)
+[----------] 1 test from RingBufferTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"RingBufferTest.PushOverwriteKeepsLatestValues" end time: Jun 22 15:49 Eastern Daylight Time
+"RingBufferTest.PushOverwriteKeepsLatestValues" time elapsed: 00:00:00
+----------------------------------------------------------
+
+23/28 Testing: RingBufferTest.SizeTracksCorrectly
+23/28 Test: RingBufferTest.SizeTracksCorrectly
+Command: "C:/Users/Masoud/Desktop/test project/Projects/Stewart-Platform-V3/build_tests/Debug/stewart_tests.exe" "--gtest_filter=RingBufferTest.SizeTracksCorrectly" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/Masoud/Desktop/test project/Projects/Stewart-Platform-V3/build_tests
+"RingBufferTest.SizeTracksCorrectly" start time: Jun 22 15:49 Eastern Daylight Time
+Output:
+----------------------------------------------------------
+Running main() from C:\Users\Masoud\Desktop\test project\Projects\Stewart-Platform-V3\build_tests\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = RingBufferTest.SizeTracksCorrectly
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from RingBufferTest
+[ RUN      ] RingBufferTest.SizeTracksCorrectly
+[       OK ] RingBufferTest.SizeTracksCorrectly (0 ms)
+[----------] 1 test from RingBufferTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"RingBufferTest.SizeTracksCorrectly" end time: Jun 22 15:49 Eastern Daylight Time
+"RingBufferTest.SizeTracksCorrectly" time elapsed: 00:00:00
+----------------------------------------------------------
+
+24/28 Testing: RingBufferTest.WorksWithStruct
+24/28 Test: RingBufferTest.WorksWithStruct
+Command: "C:/Users/Masoud/Desktop/test project/Projects/Stewart-Platform-V3/build_tests/Debug/stewart_tests.exe" "--gtest_filter=RingBufferTest.WorksWithStruct" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/Masoud/Desktop/test project/Projects/Stewart-Platform-V3/build_tests
+"RingBufferTest.WorksWithStruct" start time: Jun 22 15:49 Eastern Daylight Time
+Output:
+----------------------------------------------------------
+Running main() from C:\Users\Masoud\Desktop\test project\Projects\Stewart-Platform-V3\build_tests\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = RingBufferTest.WorksWithStruct
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from RingBufferTest
+[ RUN      ] RingBufferTest.WorksWithStruct
+[       OK ] RingBufferTest.WorksWithStruct (0 ms)
+[----------] 1 test from RingBufferTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"RingBufferTest.WorksWithStruct" end time: Jun 22 15:49 Eastern Daylight Time
+"RingBufferTest.WorksWithStruct" time elapsed: 00:00:00
+----------------------------------------------------------
+
+25/28 Testing: LoopTimerTest.StartsWithZeroIterations
+25/28 Test: LoopTimerTest.StartsWithZeroIterations
+Command: "C:/Users/Masoud/Desktop/test project/Projects/Stewart-Platform-V3/build_tests/Debug/stewart_tests.exe" "--gtest_filter=LoopTimerTest.StartsWithZeroIterations" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/Masoud/Desktop/test project/Projects/Stewart-Platform-V3/build_tests
+"LoopTimerTest.StartsWithZeroIterations" start time: Jun 22 15:49 Eastern Daylight Time
+Output:
+----------------------------------------------------------
+Running main() from C:\Users\Masoud\Desktop\test project\Projects\Stewart-Platform-V3\build_tests\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = LoopTimerTest.StartsWithZeroIterations
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from LoopTimerTest
+[ RUN      ] LoopTimerTest.StartsWithZeroIterations
+[       OK ] LoopTimerTest.StartsWithZeroIterations (0 ms)
+[----------] 1 test from LoopTimerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"LoopTimerTest.StartsWithZeroIterations" end time: Jun 22 15:49 Eastern Daylight Time
+"LoopTimerTest.StartsWithZeroIterations" time elapsed: 00:00:00
+----------------------------------------------------------
+
+26/28 Testing: LoopTimerTest.JitterIsNonNegative
+26/28 Test: LoopTimerTest.JitterIsNonNegative
+Command: "C:/Users/Masoud/Desktop/test project/Projects/Stewart-Platform-V3/build_tests/Debug/stewart_tests.exe" "--gtest_filter=LoopTimerTest.JitterIsNonNegative" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/Masoud/Desktop/test project/Projects/Stewart-Platform-V3/build_tests
+"LoopTimerTest.JitterIsNonNegative" start time: Jun 22 15:49 Eastern Daylight Time
+Output:
+----------------------------------------------------------
+Running main() from C:\Users\Masoud\Desktop\test project\Projects\Stewart-Platform-V3\build_tests\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = LoopTimerTest.JitterIsNonNegative
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from LoopTimerTest
+[ RUN      ] LoopTimerTest.JitterIsNonNegative
+[       OK ] LoopTimerTest.JitterIsNonNegative (14 ms)
+[----------] 1 test from LoopTimerTest (14 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (14 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"LoopTimerTest.JitterIsNonNegative" end time: Jun 22 15:49 Eastern Daylight Time
+"LoopTimerTest.JitterIsNonNegative" time elapsed: 00:00:00
+----------------------------------------------------------
+
+27/28 Testing: LoopTimerTest.DtIsPositiveAfterFirstIteration
+27/28 Test: LoopTimerTest.DtIsPositiveAfterFirstIteration
+Command: "C:/Users/Masoud/Desktop/test project/Projects/Stewart-Platform-V3/build_tests/Debug/stewart_tests.exe" "--gtest_filter=LoopTimerTest.DtIsPositiveAfterFirstIteration" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/Masoud/Desktop/test project/Projects/Stewart-Platform-V3/build_tests
+"LoopTimerTest.DtIsPositiveAfterFirstIteration" start time: Jun 22 15:49 Eastern Daylight Time
+Output:
+----------------------------------------------------------
+Running main() from C:\Users\Masoud\Desktop\test project\Projects\Stewart-Platform-V3\build_tests\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = LoopTimerTest.DtIsPositiveAfterFirstIteration
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from LoopTimerTest
+[ RUN      ] LoopTimerTest.DtIsPositiveAfterFirstIteration
+[       OK ] LoopTimerTest.DtIsPositiveAfterFirstIteration (25 ms)
+[----------] 1 test from LoopTimerTest (25 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (25 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"LoopTimerTest.DtIsPositiveAfterFirstIteration" end time: Jun 22 15:49 Eastern Daylight Time
+"LoopTimerTest.DtIsPositiveAfterFirstIteration" time elapsed: 00:00:00
+----------------------------------------------------------
+
+28/28 Testing: LoopTimerTest.RunsMultipleIterations
+28/28 Test: LoopTimerTest.RunsMultipleIterations
+Command: "C:/Users/Masoud/Desktop/test project/Projects/Stewart-Platform-V3/build_tests/Debug/stewart_tests.exe" "--gtest_filter=LoopTimerTest.RunsMultipleIterations" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/Masoud/Desktop/test project/Projects/Stewart-Platform-V3/build_tests
+"LoopTimerTest.RunsMultipleIterations" start time: Jun 22 15:49 Eastern Daylight Time
+Output:
+----------------------------------------------------------
+Running main() from C:\Users\Masoud\Desktop\test project\Projects\Stewart-Platform-V3\build_tests\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = LoopTimerTest.RunsMultipleIterations
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from LoopTimerTest
+[ RUN      ] LoopTimerTest.RunsMultipleIterations
+[       OK ] LoopTimerTest.RunsMultipleIterations (63 ms)
+[----------] 1 test from LoopTimerTest (63 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (63 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.07 sec
+----------------------------------------------------------
+Test Passed.
+"LoopTimerTest.RunsMultipleIterations" end time: Jun 22 15:49 Eastern Daylight Time
+"LoopTimerTest.RunsMultipleIterations" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Jun 22 15:49 Eastern Daylight Time

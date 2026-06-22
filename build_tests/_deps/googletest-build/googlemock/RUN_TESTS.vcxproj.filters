@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Masoud\Desktop\test project\Projects\Stewart-Platform-V3\build_tests\CMakeFiles\1f569be0ce95a81651e6791d655f95a9\RUN_TESTS_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{32AF13BF-F685-3685-8954-4B84A5315B24}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

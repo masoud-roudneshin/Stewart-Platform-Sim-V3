@@ -24,4 +24,4 @@ Makefile
 *.pdb
 *.ilk
 *.exp
-*.lib
+*.lib"build_tests/" 
